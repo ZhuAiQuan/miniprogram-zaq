@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="title">
+    {{ title }}
+  </view>
+  <view class="author">{{ author }}</view>
+  <rich-text nodes="{{ content }}"></rich-text>
+</view>

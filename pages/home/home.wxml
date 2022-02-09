@@ -1,0 +1,62 @@
+<view class="container {{ now.icon === '104' ? 'grey': '' }} {{ now.icon === '100' ? 'sun' : '' }}">
+  <view class="city">
+    {{ address.adm2 }}
+     · 
+    {{ address.name }}
+  </view>
+  <view>
+    <text class="tq">{{ now.text }}</text>
+  </view>
+  <view>
+    <text>温度</text>
+    {{ now.temp }}°
+  </view>
+  <view>
+    <text>体感温度</text>
+    {{ now.feelsLike }}°
+  </view>
+  <view>
+    <text>风向360角度</text>
+    {{ now.wind360 }}°
+  </view>
+  <view>
+    <text>风向</text>
+    {{ now.windDir }}
+  </view>
+  <view>
+    <text>风力等级</text>
+    {{ now.windScale }}级
+  </view>
+  <view>
+    <text>风速</text>
+    {{ now.windSpeed }}公里/小时
+  </view>
+  <view>
+    <text>相对湿度</text>
+    {{ now.humidity }}%
+  </view>
+  <view>
+    <text>当前小时累计降水量</text>
+    {{ now.precip }}毫米
+  </view>
+  <view>
+    <text>大气压强</text>
+    {{ now.pressure }}百帕
+  </view>
+  <view>
+    <text>能见度</text>
+    {{ now.vis }}公里
+  </view>
+  <view>
+    <text>云量</text>
+    {{ now.cloud }}%
+  </view>
+  <view>
+    <text>露点温度</text>
+    {{ now.dew }}°
+  </view>
+  <view class="time">
+    <text>数据观测时间</text>
+    {{ now.obsTime }}
+  </view>
+</view>
